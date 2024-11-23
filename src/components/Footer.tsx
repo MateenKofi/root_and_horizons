@@ -24,7 +24,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 href="#"
                 title={social.title}
-                className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 dark:bg-violet-600 dark:text-gray-50 hover:bg-violet-700 transition-colors"
+                className="flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 text-african-brown hover:text-white hover:bg-african-brown transition-all duration-300 ease-in-out"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

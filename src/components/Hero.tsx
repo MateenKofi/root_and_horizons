@@ -12,8 +12,11 @@ const Hero = () => {
         <div className="flex gap-8">
           <div className="w-1/2">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              A world where no child's life is torn apart by war.
+             Root And Horizons
             </h1>
+            <h4 className="text-2xl font-bold text-white mb-4">
+             Assin Manso In Retrospect
+            </h4>
             <p className="text-gray-200 mb-8 max-w-2xl">
               Every five seconds one child dies in Africa due to malnutrition and medical diseases, will you help?
             </p>

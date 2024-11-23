@@ -20,7 +20,10 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <div className="flex items-center">
                 <img src="./logo.ico" alt="AfriCulture" className="w-10 h-10" />
-                <h1 className="text-2xl font-bold text-african-brown">AfriCulture</h1>
+              <div>
+                <h1 className="text-2xl font-bold text-african-brown">Root And Horizons</h1>
+                <h1 className="text-sm font-bold text-african-brown">Assin Manso In Retrospect</h1>
+              </div>
             </div>
           </div>
           
