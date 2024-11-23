@@ -42,7 +42,9 @@ const WriterBlog = () => {
 
   return (
     <>
-    <div className="text-center text-6xl font-bold mt-10">The Journal</div>
+    <div className="w-1/2 grid place-items-center text-center text-6xl font-bold mt-10 relative">
+        <img src="./striplime.png" alt="striplime" className='bg-cover object-cover absolute h-32 w-32 z-10 opacity-60'/>
+        <span className='z-30'>The Journal</span></div>
       <section className="px-6 py-16 max-w-7xl mx-auto">
         <div className="relative flex flex-col md:flex-row items-center justify-between">
           <h1 className="text-6xl md:text-8xl font-serif absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 whitespace-nowrap">
@@ -89,7 +91,7 @@ const WriterBlog = () => {
         </div>
       </section>
       
-      <section className="px-6 py-16 max-w-7xl mx-auto">
+      <section className="px-6 py-16 max-w-4xl mx-auto">
         <h2 className="text-center font-serif text-3xl mb-12">New Literature Posts</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {blogPosts.map((post, index) => (
@@ -121,14 +123,21 @@ const WriterBlog = () => {
               Short Story & Essay<br />
               Writing Expo
             </h2>
-            <p className="text-gray-600 mb-4 max-w-md">
+          </div>
+          <p className="text-gray-600 mb-4 max-w-md">
               Led us perspecitis unde omnis iste natus error voluptatem accusantium doloremque perspecitis unde iste natus error omnis perspecitis unde omnis iste.
             </p>
-           
-          </div>
           <div className="flex gap-4 flex-wrap justify-center md:w-1/2">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="w-12 h-12 bg-gray-200 rounded-full" />
+            {[
+             'https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png',
+             'https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png',
+              'https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b',
+              'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png',
+              'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png',
+              'https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png',
+            
+            ].map((logo, index) => (
+              <img key={index} src={logo} alt={`Logo ${index + 1}`} className="w-12 h-12 rounded-full" />
             ))}
           </div>
         </div>
