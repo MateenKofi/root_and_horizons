@@ -1,11 +1,9 @@
-import { fontFamily } from "tailwindcss/defaultTheme";
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -16,10 +14,10 @@ export default {
     },
     extend: {
       colors: {
-        'african-red': '#C53030',
-        'african-orange': '#DD6B20', 
-        'african-brown': '#7B341E',
-        'african-yellow': '#D69E2E',
+        "african-red": "#C53030",
+        "african-orange": "#DD6B20",
+        "african-brown": "#7B341E",
+        "african-yellow": "#D69E2E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -54,12 +52,12 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         chart: {
-          '1': 'hsl(var(--chart-1))',
-          '2': 'hsl(var(--chart-2))',
-          '3': 'hsl(var(--chart-3))',
-          '4': 'hsl(var(--chart-4))',
-          '5': 'hsl(var(--chart-5))'
-        }
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -67,7 +65,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)"],
       },
       keyframes: {
         "accordion-down": {
@@ -80,28 +78,28 @@ export default {
         },
         marquee: {
           from: {
-            transform: 'translateX(0)'
+            transform: "translateX(0)",
           },
           to: {
-            transform: 'translateX(calc(-100% - var(--gap)))'
-          }
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
         },
-        'marquee-vertical': {
+        "marquee-vertical": {
           from: {
-            transform: 'translateY(0)'
+            transform: "translateY(0)",
           },
           to: {
-            transform: 'translateY(calc(-100% - var(--gap)))'
-          }
-        }
+            transform: "translateY(calc(-100% - var(--gap)))",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        marquee: 'marquee var(--duration) infinite linear',
-        'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
-      }
-    }
+        marquee: "marquee var(--duration) infinite linear",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+      },
+    },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [tailwindcssAnimate],
+};
