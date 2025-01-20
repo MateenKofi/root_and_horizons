@@ -1,17 +1,16 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import VideoSection from './components/VideoSection';
-import Footer from './components/Footer';
-import OurPrograms from './components/OurPrograms';
-import MakeADifference from './components/MakeADifference';
-import VideoBanner from './components/VideoBanner';
-import { MarqueeDemo } from './components/MarqueeDemo';
-import CallToAction from './components/Calltoaction';
-import ContactForm from './components/Contact';
-import WriterBlog from './components/WriteBlog';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Gallery from "./components/Gallery";
+import VideoSection from "./components/VideoSection";
+import Footer from "./components/Footer";
+import MakeADifference from "./components/MakeADifference";
+import VideoBanner from "./components/VideoBanner";
+import { MarqueeDemo } from "./components/MarqueeDemo";
+import CallToAction from "./components/Calltoaction";
+import ContactForm from "./components/Contact";
+import WriterBlog from "./components/WriteBlog";
+import OurPrograms from "./components/OurPrograms";
 function App() {
   return (
     <div className="bg-white w-full overflow-x-hidden">
@@ -29,9 +28,9 @@ function App() {
           <MarqueeDemo />
         </div>
         <div className="max-w-[100vw] w-full overflow-x-hidden relative">
-        <ContactForm />
+          <ContactForm />
         </div>
-        <WriterBlog/>
+        <WriterBlog />
       </main>
       <Footer />
     </div>
