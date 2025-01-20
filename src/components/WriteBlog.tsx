@@ -134,41 +134,7 @@ const WriterBlog = () => {
       <section className="px-6 py-16" id="retrospect">
         <ExtractDisplay />
       </section>
-      <section className="px-6 py-16 bg-[#e8e3dc]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="md:w-1/2">
-            <h2 className="font-serif text-3xl mb-4">
-              Fifteenth Annual
-              <br />
-              Short Story & Essay
-              <br />
-              Writing Expo
-            </h2>
-          </div>
-          <p className="text-gray-600 mb-4 max-w-md">
-            Led us perspecitis unde omnis iste natus error voluptatem
-            accusantium doloremque perspecitis unde iste natus error omnis
-            perspecitis unde omnis iste.
-          </p>
-          <div className="flex gap-4 flex-wrap justify-center md:w-1/2">
-            {[
-              "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-              "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.png",
-              "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b",
-              "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png",
-              "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png",
-              "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png",
-            ].map((logo, index) => (
-              <img
-                key={index}
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className="w-12 h-12 rounded-full"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 };
