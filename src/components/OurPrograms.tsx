@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const OurPrograms = () => {
   return (
@@ -18,18 +17,23 @@ const OurPrograms = () => {
               Changing Lives with Knowledge
             </h2>
             <p className="text-gray-600">
-              Our programs help give access to strong education opportunities to 
-              changing lives. Today, we can make a difference in the lives of people living 
-              with limited resources. Learn more about our educational initiatives and 
-              how you can contribute to this meaningful cause.
+              Our programs help give access to strong education opportunities to
+              changing lives. Today, we can make a difference in the lives of
+              people living with limited resources. Learn more about our
+              educational initiatives and how you can contribute to this
+              meaningful cause.
             </p>
 
             <div className="flex gap-4 pt-4">
               <button className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-full transition-colors">
                 Learn More
               </button>
-              <Link to="videos" smooth={true} duration={500} className="flex items-center gap-2 border-2 border-gray-200 hover:border-gray-300 px-6 py-3 rounded-full transition-colors cursor-pointer">
-             
+              <Link
+                to="videos"
+                smooth={true}
+                duration={500}
+                className="flex items-center gap-2 border-2 border-gray-200 hover:border-gray-300 px-6 py-3 rounded-full transition-colors cursor-pointer"
+              >
                 Watch Video
                 <span className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
                   ▶
@@ -42,9 +46,9 @@ const OurPrograms = () => {
             {/* Main large circle */}
             <div className="relative w-[400px] aspect-square mx-auto">
               <div className="w-full h-full rounded-full overflow-hidden">
-                <img 
+                <img
                   src="./smile.jpeg"
-                  alt="Program Impact" 
+                  alt="Program Impact"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -52,9 +56,9 @@ const OurPrograms = () => {
               {/* Top right circle */}
               <div className="absolute -right-4 top-12 w-32 h-32">
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-white">
-                  <img 
+                  <img
                     src="./younglady.jpeg"
-                    alt="Children smiling" 
+                    alt="Children smiling"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -63,9 +67,9 @@ const OurPrograms = () => {
               {/* Bottom left circle */}
               <div className="absolute left-0 bottom-20 w-28 h-28">
                 <div className="w-full h-full rounded-full overflow-hidden border-4 border-white">
-                  <img 
+                  <img
                     src="./old.jpeg"
-                    alt="Education program" 
+                    alt="Education program"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -83,4 +87,4 @@ const OurPrograms = () => {
   );
 };
 
-export default OurPrograms; 
+export default OurPrograms;
