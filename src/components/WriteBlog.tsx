@@ -54,12 +54,12 @@ const WriterBlog = () => {
           alt="striplime"
           className="bg-cover object-cover absolute h-32 w-32 z-10 opacity-60"
         />
-        <span className="z-30">The Journal</span>
+        <span className="z-30">BIBLIOGRAPHY</span>
       </div>
       <section className="px-6 py-16 max-w-7xl mx-auto">
         <div className="relative flex flex-col md:flex-row items-center justify-between">
           <h1 className="text-6xl md:text-8xl font-serif absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 whitespace-nowrap">
-            MARC DIXIT
+           ASSIN MANSO
           </h1>
           <div className="w-1/4">
             <img
