@@ -6,7 +6,7 @@ import VideoSection from "./components/VideoSection";
 import Footer from "./components/Footer";
 import MakeADifference from "./components/MakeADifference";
 import VideoBanner from "./components/VideoBanner";
-import { MarqueeDemo } from "./components/MarqueeDemo";
+
 import CallToAction from "./components/Calltoaction";
 import ContactForm from "./components/Contact";
 import WriterBlog from "./components/WriteBlog";
@@ -24,12 +24,9 @@ function App() {
         <Gallery />
         <VideoBanner />
         <VideoSection />
-        <div className="max-w-[100vw] w-full overflow-x-hidden relative">
-          <MarqueeDemo />
-        </div>
-        <div className="max-w-[100vw] w-full overflow-x-hidden relative">
+
           <ContactForm />
-        </div>
+
         <WriterBlog />
       </main>
       <Footer />
