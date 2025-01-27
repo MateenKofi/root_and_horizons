@@ -1,6 +1,6 @@
-import { Book, FileText, FileSignature, Globe } from "lucide-react"
-import Image from "next/image"
-import ExtractDisplay from "./ExtractDisplay"
+import React from "react";
+import { Book, FileText, FileSignature, Globe } from "lucide-react";
+import ExtractDisplay from "./ExtractDisplay";
 
 const WriterBlog = () => {
   const secondarySources = [
@@ -44,14 +44,28 @@ const WriterBlog = () => {
       link: "https://www.assinapimanim.com",
       details: "Apimanim Traditional Area, Retrieved from https://www.assinapimanim.com on 9th January 2025.",
     },
-  ]
+  ];
+
+  const primarySources = [
+    { title: "Interview with Nana Anokye Kotoko II. Assin Kyinso, 22nd November 2024" },
+    { title: "Interview with Mr. Kweku Addo. Assin Manso, 22nd November 2024" },
+    { title: "Interview with Nana Aboagye. Assin Manso, 22nd November 2024" },
+    { title: "Interview with Robert Asiedu. Assin Manso, 23rd December 2024" },
+    { title: "Interview with Divine Nawoe Azuma. Assin Manso, 6th January 2025" },
+  ];
 
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="relative flex flex-col items-center justify-center text-center">
-            <img src="/striplime.png" alt="striplime" width={128} height={128} className="absolute opacity-60" />
+            <img
+              src="/striplime.png"
+              alt="striplime"
+              width={128}
+              height={128}
+              className="absolute opacity-60"
+            />
             <h1 className="text-4xl md:text-6xl font-bold z-10 mb-4">BIBLIOGRAPHY</h1>
             <h2 className="text-3xl md:text-5xl font-serif text-gray-700">ASSIN MANSO</h2>
           </div>
@@ -59,51 +73,32 @@ const WriterBlog = () => {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <section className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="md:col-span-2">
-            <img
-              src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=1470&auto=format&fit=crop"
-              alt="Marc Dixit portrait"
-              width={800}
-              height={600}
-              className="rounded-lg object-cover w-full h-full"
-            />
-          </div>
-          <div className="flex flex-col justify-between">
-            <img
-              src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1374&auto=format&fit=crop"
-              alt="Book preview"
-              width={300}
-              height={400}
-              className="rounded-lg object-cover w-full mb-6"
-            />
-            <div className="bg-white rounded-lg shadow p-6">
-              <h3 className="text-xl font-semibold mb-2">Subscribe to our Newsletter</h3>
-              <p className="text-sm text-gray-600 mb-4">Sign up to get all our latest updates & book release news.</p>
-              <form className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Add your e-mail"
-                  className="flex-grow px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button
-                  type="submit"
-                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                >
-                  →
-                </button>
-              </form>
-            </div>
+        {/* Primary Sources Section */}
+        <section className="mb-16">
+          <h2 className="text-center font-serif text-3xl mb-8">Interviews</h2>
+          <div>
+            {primarySources.map((source, index) => (
+              <div key={index} className="bg-white rounded-lg shadow p-6 mb-4">
+                <h3 className="text-lg font-semibold">{source.title}</h3>
+              </div>
+            ))}
           </div>
         </section>
 
+        {/* Secondary Sources Section */}
         <section className="mb-16">
           <h2 className="text-center font-serif text-3xl mb-8">Secondary Sources</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {secondarySources.map((source, index) => (
-              <a href={source.link} key={index} target="_blank" rel="noopener noreferrer">
+              <a
+                href={source.link}
+                key={index}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
                 <div className="bg-white rounded-lg shadow p-6 h-full hover:shadow-md transition-shadow duration-200">
-                  <div className="flex items-center gap-2 mb-4 ">
+                  <div className="flex items-center gap-2 mb-4">
                     {source.icon}
                     <h3 className="text-lg font-semibold">{source.type}</h3>
                   </div>
@@ -114,13 +109,13 @@ const WriterBlog = () => {
           </div>
         </section>
 
+        {/* Retrospect Section */}
         <section id="retrospect">
           <ExtractDisplay />
         </section>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default WriterBlog
-
+export default WriterBlog;
