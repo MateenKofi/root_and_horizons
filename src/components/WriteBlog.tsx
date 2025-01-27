@@ -1,142 +1,126 @@
-import ExtractDisplay from "./ExtractDisplay";
+import { Book, FileText, FileSignature, Globe } from "lucide-react"
+import Image from "next/image"
+import ExtractDisplay from "./ExtractDisplay"
 
 const WriterBlog = () => {
-  const blogPosts = [
+  const secondarySources = [
     {
-      date: "Dec 25, 2023",
-      image:
-        "https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=1169&auto=format&fit=crop",
-      title: "GET READY FOR HOLIDAY ON A CHRISTMAS WEEK",
-      comments: 2,
+      type: "Book",
+      icon: <Book className="w-6 h-6 text-blue-500" />,
+      link: "https://discovered.ed.ac.uk/discovery/fulldisplay?vid=44UOE_INST:44UOE_VU2&search_scope=UoE&tab=Everything&docid=alma992933323502466&lang=en&context=L&adaptor=Local%20Search%20Engine&query=sub,exact,Nkrumah,%20Kwame,%201909-1972",
+      details:
+        "Boahen, A.A, Ghana: Evolution and Change in the Nineteenth and Twentieth Centuries, (Accra Sankofa Educational Publishers Ltd, 2000).",
     },
     {
-      date: "Dec 24, 2023",
-      image:
-        "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=1374&auto=format&fit=crop",
-      title: "STREAM OF THOUGHT IN NEW AGE NARRATIVES",
-      comments: 3,
+      type: "Book",
+      icon: <Book className="w-6 h-6 text-blue-500" />,
+      link: "https://www.google.com/search?q=Gocking+Roger.+S%2C+The+History+of+Ghana%2C+(Westport%2C+Connecticut%3B+Greenwood+Press%2C+2005).&oq=Gocking+Roger.+S%2C+The+History+of+Ghana%2C+(Westport%2C+Connecticut%3B+Greenwood+Press%2C+2005).&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg80gEIMjQzMWowajSoAgCwAgE&sourceid=chrome&ie=UTF-8",
+      details: "Gocking Roger. S, The History of Ghana, (Westport, Connecticut; Greenwood Press, 2005).",
     },
     {
-      date: "Dec 23, 2023",
-      image:
-        "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1173&auto=format&fit=crop",
-      title: "THE BEGINNER'S GUIDE TO FOUNTAIN PEN INKS",
-      comments: 1,
+      type: "Book",
+      icon: <Book className="w-6 h-6 text-blue-500" />,
+      link: "https://www.researchgate.net/publication/356493685",
+      details:
+        "Nyarko Abbam John, Central Region: Origins & Culture, (Lulu Publishing Company, 2021). https://www.researchgate.net/publication/356493685",
     },
     {
-      date: "Dec 22, 2023",
-      image:
-        "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1169&auto=format&fit=crop",
-      title: "BOOK MEETING ROOMS AND VENUES ONLINE",
-      comments: 2,
+      type: "Article",
+      icon: <FileText className="w-6 h-6 text-green-500" />,
+      link: "https://doi.org/10.1080/10548408.2018.1527743",
+      details:
+        'Adam Issahaku and Amuquandoh Francis Eric, "Ethnic-Based Motives and Experiences at Former Slave Sites," Journal of Travel & Tourism Marketing, Vol. 36, No. 4 (2019): 497-510. https://doi.org/10.1080/10548408.2018.1527743',
     },
     {
-      date: "Dec 21, 2023",
-      image:
-        "https://images.unsplash.com/photo-1505063366573-38928ae5567e?q=80&w=1170&auto=format&fit=crop",
-      title: "WAR NOVELS TO ADD TO YOUR READING LIST",
-      comments: 3,
+      type: "Master's Thesis",
+      icon: <FileSignature className="w-6 h-6 text-purple-500" />,
+      link: "https://www.semanticscholar.org/paper/AKAN-INDIGENOUS-RELIGIO-CULTURAL-BELIEFS-AND-%3A-THE-Boamah/800f63a5decdcc342c394c8420a5c9d0d3907e77",
+      details:
+        "Asante Boamah Daniel, Akan Indigenous Religio-Cultural Beliefs and Environmental Preservation: The Role of Taboos, Queen's University, 2015.",
     },
     {
-      date: "Dec 20, 2023",
-      image:
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1173&auto=format&fit=crop",
-      title: "EVERYTHING IS BETTER ON THE BEACH, RIGHT?",
-      comments: 2,
+      type: "Web Page",
+      icon: <Globe className="w-6 h-6 text-teal-500" />,
+      link: "https://www.assinapimanim.com",
+      details: "Apimanim Traditional Area, Retrieved from https://www.assinapimanim.com on 9th January 2025.",
     },
-  ];
+  ]
 
   return (
-    <>
-      <div className="w-1/2 grid place-items-center text-center text-6xl font-bold mt-10 relative">
-        <img
-          src="./striplime.png"
-          alt="striplime"
-          className="bg-cover object-cover absolute h-32 w-32 z-10 opacity-60"
-        />
-        <span className="z-30">BIBLIOGRAPHY</span>
-      </div>
-      <section className="px-6 py-16 max-w-7xl mx-auto">
-        <div className="relative flex flex-col md:flex-row items-center justify-between">
-          <h1 className="text-6xl md:text-8xl font-serif absolute z-10 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 whitespace-nowrap">
-           ASSIN MANSO
-          </h1>
-          <div className="w-1/4">
-            <img
-              src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1374&auto=format&fit=crop"
-              alt="Book preview"
-              width={150}
-              height={200}
-              className="object-cover w-full h-full rounded"
-            />
+    <div className="min-h-screen bg-gray-100">
+      <header className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="relative flex flex-col items-center justify-center text-center">
+            <img src="/striplime.png" alt="striplime" width={128} height={128} className="absolute opacity-60" />
+            <h1 className="text-4xl md:text-6xl font-bold z-10 mb-4">BIBLIOGRAPHY</h1>
+            <h2 className="text-3xl md:text-5xl font-serif text-gray-700">ASSIN MANSO</h2>
           </div>
-          <div className="w-1/2">
+        </div>
+      </header>
+
+      <main className="container mx-auto px-4 py-12">
+        <section className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="md:col-span-2">
             <img
               src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?q=80&w=1470&auto=format&fit=crop"
               alt="Marc Dixit portrait"
-              width={400}
-              height={400}
-              className="object-cover rounded-lg w-full h-full"
+              width={800}
+              height={600}
+              className="rounded-lg object-cover w-full h-full"
             />
           </div>
-          <div className="w-1/4">
-            <div className=" bg-cyan-200 p-6 rounded-lg shadow-sm ">
-              <h3 className="text-lg font-serif mb-4">
-                Subscribe to our Newsletter
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Sign up to get all our latest updates & book release news.
-              </p>
-              <div className="bg-blue-300">
-                <form className="flex absolute right-4 ">
-                  <input
-                    type="email"
-                    placeholder="Add your e-mail"
-                    className="py-1 px-1 border rounded bg-white text-gray-400 border-gray-400"
-                  />
-                  <button
-                    type="submit"
-                    className="py-1 bg-lime-400 text-white font-bold rounded transition-colors"
-                  >
-                    →
-                  </button>
-                </form>
-              </div>
+          <div className="flex flex-col justify-between">
+            <img
+              src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1374&auto=format&fit=crop"
+              alt="Book preview"
+              width={300}
+              height={400}
+              className="rounded-lg object-cover w-full mb-6"
+            />
+            <div className="bg-white rounded-lg shadow p-6">
+              <h3 className="text-xl font-semibold mb-2">Subscribe to our Newsletter</h3>
+              <p className="text-sm text-gray-600 mb-4">Sign up to get all our latest updates & book release news.</p>
+              <form className="flex space-x-2">
+                <input
+                  type="email"
+                  placeholder="Add your e-mail"
+                  className="flex-grow px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+                <button
+                  type="submit"
+                  className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  →
+                </button>
+              </form>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-6 py-16 max-w-4xl mx-auto">
-        <h2 className="text-center font-serif text-3xl mb-12">
-          New Literature Posts
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
-            <article key={index} className="group cursor-pointer">
-              <div className="relative aspect-[4/3] mb-4 overflow-hidden rounded-lg">
-                <img
-                  src={post.image}
-                  alt={post.title}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="space-y-2">
-                <time className="text-sm text-gray-600">{post.date}</time>
-                <h3 className="font-serif group-hover:text-gray-600 transition-colors">
-                  {post.title}
-                </h3>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-      <section className="px-6 py-16" id="retrospect">
-        <ExtractDisplay />
-      </section>
-      
-    </>
-  );
-};
+        <section className="mb-16">
+          <h2 className="text-center font-serif text-3xl mb-8">Secondary Sources</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {secondarySources.map((source, index) => (
+              <a href={source.link} key={index} target="_blank" rel="noopener noreferrer">
+                <div className="bg-white rounded-lg shadow p-6 h-full hover:shadow-md transition-shadow duration-200">
+                  <div className="flex items-center gap-2 mb-4 ">
+                    {source.icon}
+                    <h3 className="text-lg font-semibold">{source.type}</h3>
+                  </div>
+                  <p className="text-sm text-blue-600">{source.details}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
 
-export default WriterBlog;
+        <section id="retrospect">
+          <ExtractDisplay />
+        </section>
+      </main>
+    </div>
+  )
+}
+
+export default WriterBlog
+
