@@ -1,4 +1,3 @@
-import React from "react";
 import { Book, FileText, FileSignature, Globe } from "lucide-react";
 import ExtractDisplay from "./ExtractDisplay";
 
