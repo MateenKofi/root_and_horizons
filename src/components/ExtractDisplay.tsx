@@ -36,10 +36,10 @@ const ExtractDisplay: React.FC = () => {
           </button>
         </div>
         <div className="w-full md:w-2/3 max-h-[100dvh] bg-white rounded-lg shadow-lg p-6 ">
-          <div className="h-full overflow-y-auto pr-0 md:pr-4">
-            <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none h-full">
-              {extractText.split("\n\n").map((paragraph, index) => (
-                <p key={index} className="mb-4">
+          <div className="h-full  max-h-screen overflow-y-auto pr-0 md:pr-4">
+            <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none h-full ">
+              {extractText.split("\n").map((paragraph, index) => (
+                <p key={index} className="mb-4 ">
                   {paragraph}
                 </p>
               ))}
