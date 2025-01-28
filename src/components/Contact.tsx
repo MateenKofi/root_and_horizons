@@ -70,14 +70,19 @@ const ContactForm =()=> {
               <div className="space-y-6">
                 <div>
                   <p className="text-gray-300 mb-2">Email</p>
-                  <a href="mailto:support@trueme.com" className="text-white hover:text-gray-300">
-                    support@trueme.com
+                  <a href="mateenabdullopato@gmail.com" className="text-white hover:text-gray-300">
+                    mateenabdullopato@gmail.com
                   </a>
                 </div>
 
                 <div>
                   <p className="text-gray-300 mb-2">Phone</p>
-                  <p>+91-124-4111237 ( 11 am - 6 pm GMT )</p>
+                  <a
+              className="btn btn-neutral text-white btn-sm mt-2"
+              href="tel:+233543983427"
+            >
+                  <p>0543983427 ( 19 am - 6 pm GMT )</p>
+                  </a>
                 </div>
 
                 <div>

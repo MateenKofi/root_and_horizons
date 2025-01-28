@@ -9,13 +9,16 @@ const Hero = () => {
     >
       <div className="h-full max-w-full mx-auto flex flex-col justify-center relative">
         <div className="flex gap-8">
-          <div className="w-1/2">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <div className="w-full md:w-1/2">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 capitalize">
              Root And Horizons
             </h1>
-            <h4 className="text-2xl font-bold text-white mb-4">
+            <h4 className="text-2xl font-bold text-white mb-4 capitalize">
              Assin Manso In Retrospect
             </h4>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 capitalize">
+             Assin Manso Senior High School
+            </h1>
             <p className="text-gray-200 mb-8 max-w-2xl">
               Community History needs Attention
             </p>
