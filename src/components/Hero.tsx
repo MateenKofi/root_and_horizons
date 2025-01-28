@@ -17,7 +17,7 @@ const Hero = () => {
              Assin Manso In Retrospect
             </h4>
             <p className="text-gray-200 mb-8 max-w-2xl">
-              Every five seconds one child dies in Africa due to malnutrition and medical diseases, will you help?
+              Community History needs Attention
             </p>
           </div>
         </div>

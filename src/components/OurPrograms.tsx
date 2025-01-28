@@ -11,7 +11,7 @@ const OurPrograms = () => {
           {/* Left side content */}
           <div className="md:w-1/2 space-y-6">
             <span className="text-orange-500 uppercase tracking-wider font-medium">
-              Our Programs
+              Slave River
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Changing Lives with Knowledge
@@ -24,22 +24,7 @@ const OurPrograms = () => {
               meaningful cause.
             </p>
 
-            <div className="flex gap-4 pt-4">
-              <button className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-full transition-colors">
-                Learn More
-              </button>
-              <Link
-                to="videos"
-                smooth={true}
-                duration={500}
-                className="flex items-center gap-2 border-2 border-gray-200 hover:border-gray-300 px-6 py-3 rounded-full transition-colors cursor-pointer"
-              >
-                Watch Video
-                <span className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
-                  ▶
-                </span>
-              </Link>
-            </div>
+            
           </div>
           {/* Left side with overlapping images */}
           <div className="relative w-full md:w-1/2">

@@ -10,7 +10,7 @@ const ExtractDisplay: React.FC = () => {
     saveAs(blob, "assin-manso-extract.txt");
   };
   return (
-    <section className="relative bg-white py-20">
+    <section className="relative bg-white ">
       {/* <div className="absolute inset-0 bg-[url('./transBg.png')] opacity-5 z-0"></div> */}
       <div className="z-20 flex flex-col md:flex-row h-full p-4 md:p-8">
         <div className="w-full md:w-1/3 pr-0 md:pr-8 mb-8 md:mb-0">
@@ -35,7 +35,7 @@ const ExtractDisplay: React.FC = () => {
             Download Document(.txt)
           </button>
         </div>
-        <div className="w-full md:w-2/3 max-h-[100dvh] bg-white rounded-lg shadow-lg p-6 overflow-scroll">
+        <div className="w-full md:w-2/3 max-h-[100dvh] bg-white rounded-lg shadow-lg p-6 ">
           <div className="h-full overflow-y-auto pr-0 md:pr-4">
             <div className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none">
               {extractText.split("\n\n").map((paragraph, index) => (

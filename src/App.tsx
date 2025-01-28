@@ -24,9 +24,6 @@ function App() {
         <Gallery />
         <VideoBanner />
         <VideoSection />
-
-          <ContactForm />
-
         <WriterBlog />
       </main>
       <Footer />

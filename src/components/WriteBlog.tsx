@@ -1,5 +1,5 @@
 import { Book, FileText, FileSignature, Globe } from "lucide-react";
-import ExtractDisplay from "./ExtractDisplay";
+import ContactForm from "./Contact";
 
 const WriterBlog = () => {
   const secondarySources = [
@@ -109,8 +109,8 @@ const WriterBlog = () => {
         </section>
 
         {/* Retrospect Section */}
-        <section id="retrospect">
-          <ExtractDisplay />
+        <section id="contact">
+          <ContactForm />
         </section>
       </main>
     </div>
