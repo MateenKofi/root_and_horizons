@@ -8,7 +8,6 @@ import MakeADifference from "./components/MakeADifference";
 import VideoBanner from "./components/VideoBanner";
 
 import CallToAction from "./components/Calltoaction";
-import ContactForm from "./components/Contact";
 import WriterBlog from "./components/WriteBlog";
 import OurPrograms from "./components/OurPrograms";
 function App() {

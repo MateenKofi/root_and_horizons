@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 
 const OurPrograms = () => {
   return (
