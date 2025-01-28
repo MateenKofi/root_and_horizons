@@ -87,10 +87,15 @@ const ContactForm =()=> {
 
                 <div>
                   <p className="text-gray-300 mb-2">Address</p>
-                  <p>Trueme Technologies Pvt. Ltd.</p>
-                  <p>920, Tower-B4, Spaze i-Tech Park,</p>
-                  <p>Sector 49, Gurgaon, Haryana,</p>
-                  <p>India-122018</p>
+                  <p>Digital Address: BS-3115-2524</p>
+                  <p>Street Name: Sunyani - Berekum Road</p>
+                  <p>Region: Bono</p>
+                  <p>District: 
+                  Sunyani</p>
+                  <p>Community: 
+                  Fiapre</p>
+                  <p>Postal Area: 
+                  Sunyani 3115</p>
                 </div>
               </div>
             </div>
