@@ -41,7 +41,8 @@ const OurPrograms = () => {
           <div className="md:w-1/2 space-y-6">
            
             <p className="text-gray-600">
-              Explore the detailed map of Slave River to understand the geography and key locations within the community. This map provides valuable insights into the area, helping you navigate and discover important landmarks. Learn more about the Slave River region and how it shapes the lives of its residents.
+              Explore the detailed map of Assin Manso and it's envrionments to understand the geography and key locations within the community. This map provides valuable insights into the area, helping you navigate and discover important landmarks. Learn more about the Slave River region and how it shapes the lives of its residents.
+              
             </p>
           </div>
         </div>

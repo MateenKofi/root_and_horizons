@@ -5,22 +5,33 @@ const VideoSection = () => {
   const videos = [
     {
       url: 'https://drive.google.com/file/d/15ctoX5nLTJp2ipPnwE8jhLF3qgD_NZDk/preview',
-      title: 'Community Celebrations',
-      thumbnail: './old.jpeg', 
-      description: 'See how our community comes together to share joy and traditions'
+      title: 'First Conversation With Nana Aboagye of Assin Manso',
+       
     },
     {
       url: 'https://drive.google.com/file/d/17ED1Zfsl5tD8N59ET9ab1RvGuI0Qg9n6/preview',
-      title: 'Traditional Dance Performance',
-      thumbnail: './hero.jpeg',
-      description: 'Experience the vibrant rhythms and movements of traditional African dance'
+      title: 'The Role Of Manso In The Slave Trade',
+     
     },
     
     {
       url: 'https://drive.google.com/file/d/1OoQbfTzTd7su6Vr7HNNHAyWxIObIJwB4/preview', 
       title: 'Cultural Festival Highlights',
-      thumbnail: './smile.jpeg',
-      description: 'Join us in celebrating African culture through music, dance and art'
+     
+    },
+    {
+      url: 'https://drive.google.com/file/d/1PWTkkH2LrGLK7UWxZexxBmx3mQFfAqRH/preview', 
+      title: 'Economic Activities In Assin Manso',
+     
+    },
+    {
+      url: 'https://drive.google.com/file/d/14joPD4mzCPa3CvoRDgJh9AaWfSCTzLaU/preview', 
+      title: 'Economic Activities In Assin Manso',
+    },
+    {
+      url: 'https://drive.google.com/file/d/1tzf0ucFvApQmzT3GZaB5nbIOTpCeCpXv/preview', 
+      title: 'Economic Activities In Assin Manso',
+    
     },
    
   ];
@@ -44,7 +55,6 @@ const VideoSection = () => {
                 ></iframe>
               </div>
               <h3 className="mt-4 text-lg font-semibold text-african-brown">{video.title}</h3>
-              <p className="text-gray-600">{video.description}</p>
             </div>
           ))}
         </div>
