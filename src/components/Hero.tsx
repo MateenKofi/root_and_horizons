@@ -1,11 +1,13 @@
 import { ChevronDown } from 'lucide-react';
 import { Link } from 'react-scroll';
+import heroImage from '../assets/hero.jpeg';
 
 const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-[90dvh] bg-white p-8 bg-[url('./hero.jpeg')] bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/50"
+      className="relative h-[90dvh] bg-white p-8 bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/50"
+      style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="h-full max-w-full mx-auto flex flex-col justify-center relative">
         <div className="flex gap-8">
