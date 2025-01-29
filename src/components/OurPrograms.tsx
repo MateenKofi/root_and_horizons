@@ -26,23 +26,30 @@ const OurPrograms = () => {
      
         </div>
 
-        <div>
-        <span className="text-orange-500 uppercase tracking-wider font-medium text-xl">
-              Map
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Discover the Slave River Map
-            </h2>
+        <div className="block lg:hidden">
+          <span className="text-orange-500 uppercase tracking-wider font-medium text-xl">
+            Map
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            Discover the Slave River Map
+          </h2>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 spacey-4">
             {/* Left side with overlapping images */}
             <img src="/map.jpg" alt="slave river" className='w-full md:w-1/2'/>
           {/* Left side content */}
           <div className="md:w-1/2 space-y-6">
-           
+          <div className="hidden lg:block">
+            <span className="text-orange-500 uppercase tracking-wider font-medium text-xl">
+              Map
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Discover the Slave River Map
+            </h2>
+          </div>
             <p className="text-gray-600">
               Explore the detailed map of Assin Manso and it's envrionments to understand the geography and key locations within the community. This map provides valuable insights into the area, helping you navigate and discover important landmarks. Learn more about the Slave River region and how it shapes the lives of its residents.
-              
+
             </p>
           </div>
         </div>
