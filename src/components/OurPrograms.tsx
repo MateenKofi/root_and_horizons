@@ -9,7 +9,7 @@ const OurPrograms = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left side content */}
           <div className="md:w-1/2 space-y-6">
-            <span className="text-orange-500 uppercase tracking-wider font-medium text-xl">
+            <span className="text-african-brown uppercase tracking-wider font-bold text-xl">
               Slave River
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -27,7 +27,7 @@ const OurPrograms = () => {
         </div>
 
         <div className="block lg:hidden">
-          <span className="text-orange-500 uppercase tracking-wider font-medium text-xl">
+          <span className="text-african-brown uppercase tracking-wider font-bold text-xl">
             Map
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

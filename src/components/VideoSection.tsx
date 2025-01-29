@@ -38,6 +38,21 @@ const VideoSection = () => {
 
   return (
     <section id="videos" className="py-20 ">
+      <header className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="relative flex flex-col items-center justify-center text-center">
+            <img
+              src="/splashblue.png"
+              alt="striplime"
+              width={200}
+              height={200}
+              className="absolute opacity-60"
+            />
+            <h1 className="text-4xl md:text-6xl font-bold z-10 mb-4">Intervies</h1>
+           
+          </div>
+        </div>
+      </header>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {videos.map((video, index) => (

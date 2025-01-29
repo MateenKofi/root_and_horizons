@@ -98,6 +98,20 @@ const Gallery = () => {
 
   return (
     <section id="gallery" className="py-20">
+        <header className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="relative flex flex-col items-center justify-center text-center">
+            <img
+              src="/striplime.png"
+              alt="striplime"
+              width={128}
+              height={128}
+              className="absolute opacity-60"
+            />
+            <h1 className="text-4xl md:text-6xl font-bold z-10 mb-4">GALLERY</h1>
+          </div>
+        </div>
+      </header>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Masonry
           breakpointCols={breakpointColumns}
