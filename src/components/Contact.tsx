@@ -1,4 +1,15 @@
-const ContactForm =()=> {
+import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
+
+const ContactForm = () => {
+  const { register, handleSubmit, reset } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    toast.success("Form submitted successfully!");
+    reset();
+  };
+
   return (
     <div id="contact" className="min-h-screen relative overflow-hidden">
       <div className="absolute inset-0">
@@ -18,7 +29,7 @@ const ContactForm =()=> {
           <div className="grid md:grid-cols-2">
             {/* Form Section */}
             <div className="p-8">
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
                   <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
                     Full Name
@@ -26,6 +37,7 @@ const ContactForm =()=> {
                   <input
                     type="text"
                     id="fullName"
+                    {...register("fullName", { required: true })}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
                     placeholder="Paul Smith"
                   />
@@ -38,6 +50,7 @@ const ContactForm =()=> {
                   <input
                     type="email"
                     id="email"
+                    {...register("email", { required: true })}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
                     placeholder="paulsmith@gmail.com"
                   />
@@ -49,6 +62,7 @@ const ContactForm =()=> {
                   <textarea
                     id="message"
                     rows={4}
+                    {...register("message", { required: true })}
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-[#40E0D0] focus:border-transparent"
                     placeholder="Hi, do you have a moment to talk..."
                   />
@@ -70,7 +84,7 @@ const ContactForm =()=> {
               <div className="space-y-6">
                 <div>
                   <p className="text-gray-300 mb-2">Email</p>
-                  <a href="mateenabdullopato@gmail.com" className="text-white hover:text-gray-300">
+                  <a href="mailto:mateenabdullopato@gmail.com" className="text-white hover:text-gray-300">
                     mateenabdullopato@gmail.com
                   </a>
                 </div>
@@ -78,10 +92,10 @@ const ContactForm =()=> {
                 <div>
                   <p className="text-gray-300 mb-2">Phone</p>
                   <a
-              className="btn btn-neutral text-white btn-sm mt-2"
-              href="tel:+233543983427"
-            >
-                  <p>0543983427 ( 19 am - 6 pm GMT )</p>
+                    className="btn btn-neutral text-white btn-sm mt-2"
+                    href="tel:+233543983427"
+                  >
+                    <p>0543983427 ( 19 am - 6 pm GMT )</p>
                   </a>
                 </div>
 
@@ -90,12 +104,9 @@ const ContactForm =()=> {
                   <p>Digital Address: BS-3115-2524</p>
                   <p>Street Name: Sunyani - Berekum Road</p>
                   <p>Region: Bono</p>
-                  <p>District: 
-                  Sunyani</p>
-                  <p>Community: 
-                  Fiapre</p>
-                  <p>Postal Area: 
-                  Sunyani 3115</p>
+                  <p>District: Sunyani</p>
+                  <p>Community: Fiapre</p>
+                  <p>Postal Area: Sunyani 3115</p>
                 </div>
               </div>
             </div>
@@ -103,7 +114,7 @@ const ContactForm =()=> {
         </div>
       </div>
     </div>
-  )
-}
-export default ContactForm
+  );
+};
 
+export default ContactForm;
