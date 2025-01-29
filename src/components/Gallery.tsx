@@ -29,18 +29,12 @@ const Gallery = () => {
       src: pic1,
       alt: "Traditional Dance Performance",
     },
-    {
-      src: pic2,
-      alt: "Traditional Dance Performance",
-    },
+    
     {
       src: pic10,
       alt: "African Cultural Festival",
     },
-    {
-      src: pic18,
-      alt: "Traditional African Attire",
-    },
+   
     {
       src: pic19,
       alt: "Traditional African Attire",
@@ -49,10 +43,7 @@ const Gallery = () => {
       src: pic11,
       alt: "African Art and Craft",
     },
-    {
-      src: pic8,
-      alt: "Community Celebration",
-    },
+   
     {
       src: pic9,
       alt: "Community Celebration",
@@ -78,14 +69,6 @@ const Gallery = () => {
       alt: "Traditional Music Performance",
     },
     {
-      src: pic12,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic13,
-      alt: "Traditional Music Performance",
-    },
-    {
       src: pic14,
       alt: "Traditional Music Performance",
     },
@@ -93,19 +76,13 @@ const Gallery = () => {
       src: pic15,
       alt: "Traditional Music Performance",
     },
-    {
-      src: pic16,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic17,
-      alt: "Traditional Music Performance",
-    },
+  
+  
   ];
 
   const breakpointColumns = {
-    default: 4,
-    1100: 4,
+    default: 3,
+    1100: 3,
     700: 2,
     500: 1,
   };
@@ -117,7 +94,7 @@ const Gallery = () => {
           const img = new Image();
           img.src = image.src;
           img.onload = () => resolve(true);
-          img.onerror = () => resolve(false); // Handle load errors
+          img.onerror = () => resolve(false); 
         });
       });
       await Promise.all(imagePromises);
@@ -159,9 +136,6 @@ const Gallery = () => {
                     alt={image.alt}
                     className="w-full object-cover transform hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                    <h3 className="text-white font-semibold">{image.alt}</h3>
-                  </div>
                 </div>
               ))}
         </Masonry>
