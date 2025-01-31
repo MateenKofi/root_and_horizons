@@ -6,22 +6,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-[90dvh] bg-white p-8 bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/40 mt-16"
+      className="relative h-[90vh] bg-white p-4 md:p-8 bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/40 mt-16"
       style={{ backgroundImage: `url(${heroImage})` }}
     >
       <div className="h-full max-w-full mx-auto flex flex-col justify-center relative">
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
           <div className="w-full md:w-1/2">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 capitalize">
-             Root And Horizons
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-2 md:mb-4 capitalize">
+              Root And Horizons
             </h1>
-            <h4 className="text-2xl font-bold text-white mb-4 capitalize">
-             Assin Manso In Retrospect
+            <h4 className="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-2 md:mb-4 capitalize">
+              Assin Manso In Retrospect
             </h4>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 capitalize">
-             Assin Manso Senior High School
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-2 md:mb-4 capitalize">
+              Assin Manso Senior High School
             </h1>
-            <p className="text-gray-200 mb-8 max-w-2xl">
+            <p className="text-gray-200 mb-4 md:mb-8 max-w-2xl">
               Community History needs Attention
             </p>
           </div>
