@@ -11,7 +11,7 @@ const Navbar = () => {
     { title: "Gallery", link: "gallery" },
     { title: "Videos", link: "videos" },
     { title: "Contact", link: "contact" },
-    { title: "Retrospect", link: "retrospect" },
+
   ];
 
   return (
@@ -34,7 +34,7 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="lg:ml-10 flex items-baseline space-x-4">
               {menuItems.map((item) => (
                 <Link
                   key={item.link}

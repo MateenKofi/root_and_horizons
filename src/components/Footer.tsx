@@ -1,5 +1,14 @@
+import { Link } from "react-scroll";
 
 const Footer = () => {
+  const menuItems = [
+    { title: "Home", link: "home" },
+    { title: "About", link: "about" },
+    { title: "Gallery", link: "gallery" },
+    { title: "Videos", link: "videos" },
+    { title: "Contact", link: "contact" },
+
+  ];
   return (
     <footer className="bg-lime-300/80">
       <div className="container flex justify-between flex-col p-4 mx-auto md:p-8 lg:flex-row ">
@@ -7,13 +16,21 @@ const Footer = () => {
           <div>
             <img src='/logo.png' alt="logo" className='h-8 w-8'/>
           </div>
-        <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-          <li className="cursor-pointer text-african-brown hover:text-african-orange">Shop</li>
-          <li className="cursor-pointer text-african-brown hover:text-african-orange">About</li>
-          <li className="cursor-pointer text-african-brown hover:text-african-orange">Blog</li>
-          <li className="cursor-pointer text-african-brown hover:text-african-orange">Pricing</li>
-          <li className="cursor-pointer text-african-brown hover:text-african-orange">Contact</li>
-        </ul>
+          <div className="flex items-center">
+            <div className="lg:ml-10 flex items-baseline space-x-4">
+              {menuItems.map((item) => (
+                <Link
+                  key={item.link}
+                  to={item.link}
+                  smooth={true}
+                  duration={500}
+                  className="text-african-brown hover:text-african-orange px-3 py-2 rounded-md cursor-pointer"
+                >
+                  {item.title}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
         <div className="flex flex-col justify-center pt-6 lg:pt-0">
           <div className="flex justify-center space-x-4">

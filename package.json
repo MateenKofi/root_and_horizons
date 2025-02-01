@@ -12,7 +12,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "@types/swiper": "^6.0.0",
-    "aos": "^2.3.4",
+    "aos": "3.0.0-beta.6",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "file-saver": "^2.0.5",
