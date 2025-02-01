@@ -1,5 +1,8 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const OurPrograms = () => {
+  AOS.init();
   return (
     <section className="relative bg-white py-20">
       {/* Background pattern */}
@@ -9,20 +12,24 @@ const OurPrograms = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left side content */}
           <div className="md:w-1/2 space-y-6">
-            <span className="text-african-brown uppercase tracking-wider font-bold text-xl">
+            <h1 className="text-african-brown uppercase tracking-wider font-bold text-xl" data-aos="fade-left" data-aos-delay="50"
+    data-aos-duration="1000">
               Slave River
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            </h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900" data-aos="fade-left" data-aos-delay="50"
+    data-aos-duration="1050">
               Empowering the Slave River Community
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600" data-aos="fade-left" data-aos-delay="50"
+    data-aos-duration="1500">
               Our programs at Slave River aim to provide quality education and resources to the community. We strive to empower individuals through knowledge and skills, fostering growth and development. Discover more about our initiatives and how you can support our mission to create a brighter future for everyone at Slave River.
             </p>
 
             
           </div>
           {/* Left side with overlapping images */}
-          <img src="/slave river site.jpg" alt="slave river" className='w-full md:w-1/2'/>
+          <img src="/slave river site.jpg" alt="slave river" className='w-full md:w-1/2'data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1000"/>
      
         </div>
 
