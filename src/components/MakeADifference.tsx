@@ -1,5 +1,8 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const MakeADifference = () => {
+  AOS.init();
   const cards = [
     {
       icon: "🎯", // You can replace these with actual icon components
@@ -44,8 +47,11 @@ const MakeADifference = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {cards.map((card, index) => (
             <div 
+              data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration={`${1000 + index * 500}`}
               key={index}
-              className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow
+              className="bg-green-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow
                         border border-gray-100 text-center group"
             >
               {/* Icon container */}
@@ -69,4 +75,4 @@ const MakeADifference = () => {
   );
 };
 
-export default MakeADifference; 
+export default MakeADifference;
