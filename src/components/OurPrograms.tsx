@@ -33,7 +33,8 @@ const OurPrograms = () => {
      
         </div>
 
-        <div className="block lg:hidden">
+        <div className="block lg:hidden" data-aos="fade-left" data-aos-delay="50"
+    data-aos-duration="1000">
           <span className="text-african-brown uppercase tracking-wider font-bold text-xl">
             Map
           </span>
@@ -43,10 +44,12 @@ const OurPrograms = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 spacey-4">
             {/* Left side with overlapping images */}
-            <img src="/map.jpg" alt="slave river" className='w-full md:w-1/2'/>
+            <img src="/map.jpg" alt="slave river" className='w-full md:w-1/2' data-aos="fade-left" data-aos-delay="50"
+    data-aos-duration="1050"/>
           {/* Left side content */}
           <div className="md:w-1/2 space-y-6">
-          <div className="hidden lg:block">
+          <div className="hidden lg:block" data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1000">
             <span className="text-orange-500 uppercase tracking-wider font-medium text-xl">
               Map
             </span>
@@ -54,7 +57,8 @@ const OurPrograms = () => {
               Discover the Slave River Map
             </h2>
           </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600" data-aos="fade-right" data-aos-delay="50"
+    data-aos-duration="1050">
               Explore the detailed map of Assin Manso and it's envrionments to understand the geography and key locations within the community. This map provides valuable insights into the area, helping you navigate and discover important landmarks. Learn more about the Slave River region and how it shapes the lives of its residents.
 
             </p>
