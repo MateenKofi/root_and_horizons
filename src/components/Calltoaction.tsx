@@ -2,9 +2,10 @@ import { toast } from "react-hot-toast";
 import { useForm } from "react-hook-form";
 
 const CallToAction = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset } = useForm<{ email: string }>();
 
   const onSubmit = (data: { email: string }) => {
+    console.log(data);
     toast.success("You've Subscribed to our news letter successfully!");
     reset();
   };
