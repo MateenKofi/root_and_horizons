@@ -17,6 +17,17 @@ import pic16 from "./pic-16.jpg";
 import pic17 from "./pic-17.jpg";
 import pic18 from "./pic-18.jpg";
 import pic19 from "./pic-19.jpg";
+import pic20 from './photo_2025-02-02_09-14-14.jpg';
+import pic21 from './photo_2025-02-02_09-14-26.jpg';
+import pic22 from './pic-90.jpg';
+import pic23 from './pic-20.jpg';
+import pic24 from './pic-21.jpg';
+import pic25 from './pic-22.jpg';
+import pic26 from './WhatsApp Image 2025-02-03 at 12.44.37_f1e5e358.jpg';
+import pic27 from './WhatsApp Image 2025-02-03 at 12.44.45_ab8b18e5.jpg';
+import pic28 from './WhatsApp Image 2025-02-03 at 12.44.47_7ddb6685.jpg';
+import pic29 from './WhatsApp Image 2025-02-03 at 12.44.50_74eb60fc.jpg';
+import pic30 from './WhatsApp Image 2025-02-03 at 12.44.52_008f4f1a.jpg';
 
 export {
   pic1,
@@ -38,4 +49,15 @@ export {
   pic17,
   pic18,
   pic19,
+  pic20,
+  pic21,
+  pic22,
+  pic23,
+  pic24,
+  pic25,
+  pic26,
+  pic27,
+  pic28,
+  pic29,
+  pic30,
 };

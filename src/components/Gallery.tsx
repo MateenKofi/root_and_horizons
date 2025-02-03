@@ -1,77 +1,13 @@
 import { useState, useEffect } from "react";
 import Masonry from "react-masonry-css";
-import {
-  pic1,
-  pic3,
-  pic4,
-  pic5,
-  pic6,
-  pic7,
-  pic9,
-  pic10,
-  pic11,
-  pic14,
-  pic15,
-  pic19,
-} from "../assets/images";
+import * as images from "../assets/images";
 
 const Gallery = () => {
   const [loading, setLoading] = useState(true);
-  const images = [
-    {
-      src: pic1,
-      alt: "Traditional Dance Performance",
-    },
-    
-    {
-      src: pic10,
-      alt: "African Cultural Festival",
-    },
-   
-    {
-      src: pic19,
-      alt: "Traditional African Attire",
-    },
-    {
-      src: pic11,
-      alt: "African Art and Craft",
-    },
-   
-    {
-      src: pic9,
-      alt: "Community Celebration",
-    },
-    {
-      src: pic7,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic6,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic5,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic4,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic3,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic14,
-      alt: "Traditional Music Performance",
-    },
-    {
-      src: pic15,
-      alt: "Traditional Music Performance",
-    },
-  
-  
-  ];
+  const imageList = Object.keys(images).map((key) => ({
+    src: images[key],
+    alt: key.replace(/pic(\d+)/, "Image $1"),
+  }));
 
   const breakpointColumns = {
     default: 3,
@@ -82,7 +18,7 @@ const Gallery = () => {
 
   useEffect(() => {
     const loadImages = async () => {
-      const imagePromises = images.map((image) => {
+      const imagePromises = imageList.map((image) => {
         return new Promise((resolve) => {
           const img = new Image();
           img.src = image.src;
@@ -98,7 +34,7 @@ const Gallery = () => {
 
   return (
     <section id="gallery" className="py-20">
-        <header className="py-12 bg-white">
+      <header className="py-12 bg-white">
         <div className="container mx-auto px-4">
           <div className="relative flex flex-col items-center justify-center text-center">
             <img
@@ -133,7 +69,7 @@ const Gallery = () => {
                   </div>
                 </div>
               ))
-            : images.map((image, index) => (
+            : imageList.map((image, index) => (
                 <div
                   key={index}
                   className="mb-6 relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"

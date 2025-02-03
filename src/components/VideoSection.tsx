@@ -35,12 +35,12 @@ const VideoSection = () => {
     },
     {
       url: 'https://drive.google.com/file/d/1q8xCNAfI80ZCljTVhu3BuZXAPRIWsGkp/preview', 
-      title: 'Economic Activities In Assin Manso',
+      title: 'Origin Story Of Assin Manso (Nana Aboagye',
     
     },
     {
       url: 'https://drive.google.com/file/d/1wUlBvtA5uqIQ5XJShATGogafPPSLwKD_/preview', 
-      title: 'Economic Activities In Assin Manso',
+      title: 'Origin Story Of Assin Manso (Mr. Ado)',
     
     },
    

@@ -3,26 +3,22 @@ import 'aos/dist/aos.css';
 
 const MakeADifference = () => {
   AOS.init();
-  const cards = [
+  const quotes = [
     {
-      icon: "🎯", // You can replace these with actual icon components
-      title: "Easy Access",
-      description: "Simple and accessible ways to get involved and make a positive impact in your community."
+      quote: "Freedom is never voluntarily given by the oppressor; it must be demanded by the oppressed.",
+      author: "Martin Luther King Jr."
     },
     {
-      icon: "🏘️",
-      title: "Locally For Locals",
-      description: "Supporting local initiatives that directly benefit your neighborhood and surrounding areas."
+      quote: "The moment the slave resolves to no longer be a slave, his chains fall.",
+      author: "Mahatma Gandhi"
     },
     {
-      icon: "📊",
-      title: "Real Impact",
-      description: "Measurable outcomes and transparent reporting of how your support makes a difference."
+      quote: "I am not a man, and a brother?",
+      author: "Josiah Wedgwood"
     },
     {
-      icon: "💝",
-      title: "Safety Net",
-      description: "Creating a reliable support system for those in need within our community."
+      quote: "Whenever I hear anyone arguing for slavery, I feel a strong impulse to see it tried on him personally.",
+      author: "Abraham Lincoln"
     }
   ];
 
@@ -35,17 +31,16 @@ const MakeADifference = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Make a Difference
+            Quotes about Slavery
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our simple but effective steps to provide care and support to those in need across 
-            local communities and beyond.
+            Reflect on these powerful quotes about the history and impact of slavery.
           </p>
         </div>
 
-        {/* Cards grid */}
+        {/* Quotes grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {cards.map((card, index) => (
+          {quotes.map((quote, index) => (
             <div 
               data-aos="zoom-in"
               data-aos-delay="50"
@@ -54,18 +49,18 @@ const MakeADifference = () => {
               className="bg-green-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow
                         border border-gray-100 text-center group"
             >
-              {/* Icon container */}
+              {/* Quote container */}
               <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center 
                             mx-auto mb-6 group-hover:bg-orange-100 transition-colors">
-                <span className="text-2xl">{card.icon}</span>
+                <span className="text-2xl">“</span>
               </div>
 
               {/* Content */}
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                {card.title}
+                {quote.quote}
               </h3>
               <p className="text-gray-600 text-sm">
-                {card.description}
+                - {quote.author}
               </p>
             </div>
           ))}
