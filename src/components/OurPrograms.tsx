@@ -28,8 +28,16 @@ const OurPrograms = () => {
             
           </div>
           {/* Left side with overlapping images */}
-          <img src="/slave river site.jpg" alt="slave river" className='w-full md:w-1/2'data-aos="fade-right" data-aos-delay="50"
-    data-aos-duration="1000"/>
+          <div>
+
+          </div>
+            <div className="w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img  src="/slave river site.jpg" alt="Image 1" className='w-full h-56' data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"/>
+            <img src="/slavegate.jpg" alt="Image 2" className='w-full h-56' data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000"/>
+            <img src="/slavebathgate.jpg" alt="Image 3" className='w-full h-56' data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000"/>
+            <img src="/slavenames1.jpg" alt="Image 4" className='w-full h-56' data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"/>
+            </div>
+          
      
         </div>
 

@@ -33,6 +33,16 @@ const VideoSection = () => {
       title: 'Economic Activities In Assin Manso',
     
     },
+    {
+      url: 'https://drive.google.com/file/d/1q8xCNAfI80ZCljTVhu3BuZXAPRIWsGkp/preview', 
+      title: 'Economic Activities In Assin Manso',
+    
+    },
+    {
+      url: 'https://drive.google.com/file/d/1wUlBvtA5uqIQ5XJShATGogafPPSLwKD_/preview', 
+      title: 'Economic Activities In Assin Manso',
+    
+    },
    
   ];
 
