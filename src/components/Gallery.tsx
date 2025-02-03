@@ -5,7 +5,7 @@ import * as images from "../assets/images";
 const Gallery = () => {
   const [loading, setLoading] = useState(true);
   const imageList = Object.keys(images).map((key) => ({
-    src: images[key],
+    src: (images as { [key: string]: string })[key],
     alt: key.replace(/pic(\d+)/, "Image $1"),
   }));
 
