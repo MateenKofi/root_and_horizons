@@ -87,6 +87,9 @@ const ContactForm = () => {
                   <a href="mailto:mateenabdullopato@gmail.com" className="text-white hover:text-gray-300">
                     mateenabdullopato@gmail.com
                   </a>
+                  <a href="mailto:assin_manso@yahoo.com" className="text-white hover:text-gray-300">
+                    assin_manso@yahoo.com
+                  </a>
                 </div>
 
                 <div>
