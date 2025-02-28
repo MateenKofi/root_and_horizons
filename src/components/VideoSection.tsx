@@ -58,7 +58,7 @@ const VideoSection = () => {
               height={200}
               className="absolute opacity-60"
             />
-            <h1 className="text-4xl md:text-6xl font-bold z-10 mb-4">Intervies</h1>
+            <h1 className="text-4xl md:text-6xl font-bold z-10 mb-4">Interviews</h1>
            
           </div>
         </div>
