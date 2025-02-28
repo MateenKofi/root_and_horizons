@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="bg-white w-full overflow-x-hidden">
       <Navbar />
-      <main className="overflow-x-hidden">
+      <main className="w-full overflow-x-hidden">
         <Hero />
         <About />
         <OurPrograms />
