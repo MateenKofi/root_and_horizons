@@ -12,9 +12,8 @@ import OurPrograms from "./components/OurPrograms";
 
 function App() {
   return (
-    <div className="bg-white w-full overflow-x-hidden">
+    <div className="bg-white w-full">
       <Navbar />
-      <main className="w-full overflow-x-hidden">
         <Hero />
         <About />
         <OurPrograms />
@@ -24,7 +23,6 @@ function App() {
         <VideoBanner />
         <VideoSection />
         <WriterBlog />
-      </main>
       <Footer />
     </div>
   );
